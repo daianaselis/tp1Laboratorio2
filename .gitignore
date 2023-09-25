@@ -1,0 +1,12 @@
+*.cache
+*.bin
+*.exe
+*.suo
+*.pdb
+*.vsidx
+*.user
+*.v2
+bin
+*.props
+*.targets
+obj
