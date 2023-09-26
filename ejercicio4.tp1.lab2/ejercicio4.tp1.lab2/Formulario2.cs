@@ -30,7 +30,7 @@ namespace ejercicio4.tp1.lab2
                    CantidadPisos=1,
                    Direccion="P.Shermann Calle Wallaby 42 ,Sidney",
                    MetrosCuadrados=75,
-
+                   precioXdia=6000,
 
                 },
                 new Casa()
@@ -40,6 +40,7 @@ namespace ejercicio4.tp1.lab2
                    CantidadPisos=2,
                    Direccion="Avenida Siempreviva 742",
                    MetrosCuadrados=60,
+                   precioXdia=5000
                 },
                 new Casa()
                 {
@@ -48,6 +49,7 @@ namespace ejercicio4.tp1.lab2
                    CantidadPisos=2,
                    Direccion="Calle falsa 123",
                    MetrosCuadrados=80,
+                   precioXdia=7800
 
                 },
                 new Casa()
@@ -57,6 +59,7 @@ namespace ejercicio4.tp1.lab2
                    CantidadPisos=2,
                    Direccion="Calle de mentira 66",
                    MetrosCuadrados=90,
+                   precioXdia=8500
                 }
             };
             clienteActual = cliente;
@@ -70,7 +73,7 @@ namespace ejercicio4.tp1.lab2
             Alquiler alquiler = new Alquiler()
             {
                 Casaalquiler = casaSeleccionada,
-                CantidadDedias = comboBox_Casa.SelectedIndex,
+                CantidadDedias = int.Parse(txtBoxCantidaddias.Text),
                 CantidaddePersonas = comboBoxPersonas.SelectedIndex + 1,
                 ClienteAlquiler = clienteActual,
             };
@@ -78,7 +81,7 @@ namespace ejercicio4.tp1.lab2
 
             Formulario3 formulario3 = new Formulario3(alquiler);
             formulario3.ShowDialog();
-            
+
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -88,8 +91,7 @@ namespace ejercicio4.tp1.lab2
             lbl_cantidadormitorios.Text = casaSeleccionada.CantidadDormitorios.ToString();
             label3_pisos.Text = casaSeleccionada.CantidadPisos.ToString();
             lblbanios.Text = casaSeleccionada.cantidadBanios.ToString();
-
-
+      
         }
 
         private void txtBoxCantidaddias_TextChanged(object sender, EventArgs e)
@@ -97,7 +99,7 @@ namespace ejercicio4.tp1.lab2
             if (int.Parse(txtBoxCantidaddias.Text) > 21)
             {
                 MessageBox.Show("Solo puede alquilar 21 dias la propiedad...");
-                txtBoxCantidaddias.Text = string.Empty;
+                txtBoxCantidaddias.Text = "0";
             }
 
         }

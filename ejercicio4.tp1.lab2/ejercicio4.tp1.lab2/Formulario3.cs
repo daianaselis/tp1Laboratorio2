@@ -23,6 +23,13 @@ namespace ejercicio4.tp1.lab2
         private void Formulario3_Load(object sender, EventArgs e)
         {
 
+            lbl_casarecibo2.Text = alquilerActual.Casaalquiler.Direccion;
+            LBLdormitorios.Text = alquilerActual.Casaalquiler.CantidadDormitorios.ToString();
+            lbl_F3_CantidadPisos2.Text = alquilerActual.Casaalquiler.CantidadPisos + " Pisos";
+            lblcantidadBanios_2.Text = alquilerActual.Casaalquiler.cantidadBanios.ToString() + " Baños";
+            CostoxDia_2.Text = "$" + alquilerActual.Casaalquiler.precioXdia.ToString();
+            CantidadDias2.Text = alquilerActual.CantidadDedias.ToString();
+            lbl_alquilerpagado.Text = "$" + alquilerActual.MontoaPagar.ToString();
         }
     }
 }

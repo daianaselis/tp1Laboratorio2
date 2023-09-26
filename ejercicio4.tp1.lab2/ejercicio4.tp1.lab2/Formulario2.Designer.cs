@@ -82,7 +82,7 @@
             btn_alquiler.Name = "btn_alquiler";
             btn_alquiler.Size = new Size(75, 23);
             btn_alquiler.TabIndex = 3;
-            btn_alquiler.Text = "Alquiler";
+            btn_alquiler.Text = "Alquilar";
             btn_alquiler.UseVisualStyleBackColor = true;
             btn_alquiler.Click += btn_alquiler_Click;
             // 

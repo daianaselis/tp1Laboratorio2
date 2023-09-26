@@ -38,10 +38,7 @@ namespace ejercicio3tp2lab2
 
         private void txtBox2_TextChanged(object sender, EventArgs )
         {
-            if ()
-            {
-
-            }
+          
         }
 
         private void ShowThis(object? sender, EventArgs e)

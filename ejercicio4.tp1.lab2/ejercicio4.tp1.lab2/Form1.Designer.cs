@@ -209,6 +209,8 @@
             textBoxNroCliente.Name = "textBoxNroCliente";
             textBoxNroCliente.Size = new Size(210, 23);
             textBoxNroCliente.TabIndex = 19;
+            textBoxNroCliente.TextChanged += textBoxNroCliente_TextChanged;
+            textBoxNroCliente.KeyPress += textBoxNroCliente_KeyPress;
             // 
             // Form1
             // 

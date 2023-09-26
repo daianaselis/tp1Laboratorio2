@@ -37,7 +37,7 @@
             // 
             labeltotalf3.AutoSize = true;
             labeltotalf3.BackColor = SystemColors.ControlLight;
-            labeltotalf3.Location = new Point(175, 146);
+            labeltotalf3.Location = new Point(180, 146);
             labeltotalf3.Name = "labeltotalf3";
             labeltotalf3.Size = new Size(13, 15);
             labeltotalf3.TabIndex = 0;
@@ -57,7 +57,7 @@
             // 
             labelfechayhora.AutoSize = true;
             labelfechayhora.BackColor = SystemColors.ControlLight;
-            labelfechayhora.Location = new Point(165, 205);
+            labelfechayhora.Location = new Point(180, 213);
             labelfechayhora.Name = "labelfechayhora";
             labelfechayhora.Size = new Size(38, 15);
             labelfechayhora.TabIndex = 2;
